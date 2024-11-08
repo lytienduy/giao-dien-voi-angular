@@ -1,0 +1,51 @@
+<div class="container my-5">
+    <h1 class="text-center mb-5">{{title}}</h1>
+    <form ng-submit="creatUser()">
+      <div class="form-group">
+        <label for="check-in-date">Ngày Nhận Phòng</label>
+        <input type="date" class="form-control" id="check-in-date" ng-model="userInput.dateCheckIn">
+        <p class="text-danger" ng-if="kiemtra.dateCheckIn">Vui lòng nhập Ngày Vào</p>
+      </div>
+      <div class="form-group">
+        <label for="check-out-date">Ngày Trả Phòng</label>
+        <input type="date" class="form-control" id="check-out-date" ng-model="userInput.dateCheckOut">
+        <p class="text-danger" ng-if="kiemtra.dateCheckOut">Vui lòng nhập lại ngày ra</p>
+      </div>
+      <div class="form-group">
+        <label for="room-type">Loại Phòng</label>
+        <select class="form-control" id="room-type" ng-model="userInput.loaiPhong">
+          <option value="">Chọn loại phòng</option>
+          <option value="Phòng đơn">Phòng đơn</option>
+          <option value="Phòng đôi">Phòng đôi</option>
+          <option value="Phòng cao cấp">Phòng cao cấp</option>
+        </select>
+        <p class="text-danger" ng-if="kiemtra.loaiPhong">Vui lòng chọn loại phòng</p>
+      </div>
+      <div class="form-group">
+        <label for="num-guests">Số Lượng Khách</label>
+        <input type="number" class="form-control" id="num-guests" min="1" ng-model="userInput.soluongkhach">
+        <p class="text-danger" ng-if="kiemtra.soluongkhach">Vui lòng nhập số lượng khách</p>
+      </div>
+      <div class="form-group">
+        <label for="name">Tên Khách Hàng</label>
+        <input type="text" class="form-control" id="name" ng-model="userInput.name">
+        <p class="text-danger" ng-if="kiemtra.name">Vui lòng nhập lại họ tên</p>
+      </div>
+      <div class="form-group">
+        <label for="name">Căn cước công dân</label>
+        <input type="text" class="form-control" id="cccd" ng-model="userInput.cccd">
+        <p class="text-danger" ng-if="kiemtra.cccd">Vui lòng nhập cccd</p>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Khách Hàng</label>
+        <input type="email" class="form-control" id="email" ng-model="userInput.email">
+        <p class="text-danger" ng-if="kiemtra.email">Vui lòng nhập lại email</p>
+      </div>
+      <div class="form-group">
+        <label for="phone">Số Điện Thoại Khách Hàng</label>
+        <input type="tel" class="form-control" id="phone" ng-model="userInput.sdt">
+        <p class="text-danger" ng-if="kiemtra.sdt">Vui lòng nhập lại sdt</p>
+      </div>
+      <button type="submit" class="btn btn-primary">Đặt Phòng</button>
+    </form>
+  </div>

@@ -1,0 +1,36 @@
+<h2>{{title1}}</h2>
+<a href="#!/datPhong" class="btn btn-success mb-2 mt-2 ms-1">Thêm</a>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Tên Khách Hàng</th>
+        <th>Ngày Nhận Phòng</th>
+        <th>Ngày Trả Phòng</th>
+        <th>Loại Phòng</th>
+        <th>Số lượng khách</th>
+        <th>Căn cước công dân</th>
+        <th>Email</th>
+        <th>Số điện thoại</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in listUser">
+        <td>{{$index +1}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.dateCheckIn | date : 'dd/MM/yyyy'}}</td>
+        <td>{{item.dateCheckOut | date : 'dd/MM/yyyy'}}</td>
+        <td>{{item.loaiPhong}}</td>
+        <td>{{item.soluongkhach}}</td>
+        <td>{{item.cccd}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.sdt}}</td>
+        <td>
+          <button class="btn btn-danger" ng-click="deleteUser(item.id)">Xóa</button>
+          <a href="#!/detailUser/{{item.id}}" class="btn btn-primary">Chi tiết</a>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>

@@ -1,0 +1,74 @@
+<div class="jumbotron">
+    <h1 class="display-4">{{title2}}</h1>
+    <p class="lead">Quản lý đặt phòng khách sạn của bạn một cách dễ dàng.</p>
+    <hr class="my-4">
+    <a class="btn btn-primary btn-lg" href="#!/datPhong" role="button">Đặt Phòng</a>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Đặt Phòng Sắp Tới</h2>
+      <div class="row mb-3">
+        <div class="col-4">
+          <label for="form-control">Số khách hàng muốn hiển thị:</label>
+        <input type="number" class="form-control border border-primary shadow" step="1" min="1" ng-model="showKH">
+        </div>
+        
+        <div class="col-4">
+          <label for="">Sắp xếp theo</label>
+          <select ng-model="sapXepTheo" class="form-control border border-primary shadow">
+            <option value="name">Họ tên</option>
+            <option value="dateCheckIn">Ngày nhận phòng</option>
+            <option value="dateCheckOut">Ngày trả phòng</option>
+            <option value="loaiPhong">Loại phòng</option>
+        </select>
+        </div>
+        <div class="col-4">
+          <label for="form-control">Tìm kiếm theo tên khách hàng:</label>
+          <input type="text" class="form-control border border-primary shadow" step="1" min="1" ng-model="findKH">
+        </div>
+      </div>
+      
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Tên Khách Hàng</th>
+            <th>Ngày Nhận Phòng</th>
+            <th>Ngày Trả Phòng</th>
+            <th>Loại Phòng</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="item in listUser | limitTo: showKH | orderBy:sapXepTheo | filter: {name: findKH}">
+            <td>{{item.name}}</td>
+            <td>{{item.dateCheckIn | date: 'dd/MM/yyyy'}}</td>
+            <td>{{item.dateCheckOut | date: 'dd/MM/yyyy'}}</td>
+            <td>{{item.loaiPhong}}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+    </div>
+    <div class="col-md-6">
+      <h2>Các Loại Phòng</h2>
+      <div class="card-deck">
+        <div class="card">
+          <img src="https://gcs.tripi.vn/public-tripi/tripi-feed/img/473822mLe/intercontinental-phu-quoc-long-beach-resort-1114182.jpg" height="240" width="240" class="card-img-top" alt="Phòng Tiêu Chuẩn">
+          <div class="card-body">
+            <h5 class="card-title">Phòng Tiêu Chuẩn</h5>
+            <p class="card-text">Phòng tiêu chuẩn của chúng tôi cung cấp chỗ ở thoải mái cho tối đa 2 khách.</p>
+            <a href="#!/datPhong" class="btn btn-primary">Đặt Phòng</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://edeninterior.vn/wp-content/uploads/2022/04/phong-ngu-hoang-gia-27.jpg" height="240" width="240" class="card-img-top" alt="Phòng Cao Cấp">
+          <div class="card-body">
+            <h5 class="card-title">Phòng Cao Cấp</h5>
+            <p class="card-text">Trải nghiệm phòng cao cấp của chúng tôi với các tiện nghi bổ sung.</p>
+            <a href="#!/datPhong" class="btn btn-primary">Đặt Phòng</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

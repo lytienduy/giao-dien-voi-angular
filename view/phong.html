@@ -1,0 +1,177 @@
+<h1 class="text-center mb-4 mt-4">{{title}}</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="https://dyf.vn/wp-content/uploads/2021/10/phong-don-la-gi-tieu-chuan-cach-phan-loai-va-goi-ten_6172694c1f932.jpeg" width="600" height="300" class="card-img-top" alt="Phòng Đơn">
+          <div class="card-body">
+            <h5 class="card-title">Phòng Đơn</h5>
+            <p class="card-text">Phòng đơn được thiết kế cho 1-2 khách, có giường đơn hoặc giường đôi nhỏ.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="#" class="btn btn-sm btn-outline-secondary"  data-bs-toggle="modal" data-bs-target="#clickSingleRoom">Xem Chi Tiết</a>
+                <a href="#!/datPhong" class="btn btn-sm btn-outline-secondary">Đặt Phòng</a>
+              </div>
+              <small class="text-muted">Giá từ 500.000 VNĐ/đêm</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="https://tubepfurniture.com/wp-content/uploads/2020/09/phong-mau-khach-san-go-cong-nghiep-01.jpg" width="600" height="300" class="card-img-top" alt="Phòng Đôi">
+          <div class="card-body">
+            <h5 class="card-title">Phòng Đôi</h5>
+            <p class="card-text">Phòng đôi được thiết kế cho 2-3 khách, có 2 giường đơn hoặc 1 giường đôi lớn.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="#" class="btn btn-sm btn-outline-secondary"  data-bs-toggle="modal" data-bs-target="#clickDoubleRoom">Xem Chi Tiết</a>
+                <a href="#!/datPhong" class="btn btn-sm btn-outline-secondary">Đặt Phòng</a>
+              </div>
+              <small class="text-muted">Giá từ 800.000 VNĐ/đêm</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="https://housedesign.vn/wp-content/uploads/2020/03/phong-khach-san-dep-1.jpg" width="600" height="300"  class="card-img-top" alt="Phòng Suite">
+          <div class="card-body">
+            <h5 class="card-title">Phòng Cao cấp</h5>
+            <p class="card-text">Phòng cao cấp được thiết kế rộng rãi sang trọng, có diện tích lớn hơn và nhiều tiện nghi.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="#" class="btn btn-sm btn-outline-secondary " data-bs-toggle="modal" data-bs-target="#clickLuxury">Xem Chi Tiết</a>
+                <a href="#!/datPhong" class="btn btn-sm btn-outline-secondary">Đặt Phòng</a>
+              </div>
+              <small class="text-muted">Giá từ 1.200.000 VNĐ/đêm</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div  class="modal" tabindex="-1" role="dialog" id="clickSingleRoom">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Chi Tiết Phòng Đơn
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-outline-primary"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ><i class="bi bi-x-lg"></i></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="https://dyf.vn/wp-content/uploads/2021/10/phong-don-la-gi-tieu-chuan-cach-phan-loai-va-goi-ten_6172694c1f932.jpeg" width="1000" height="500" alt="Phòng Đơn" class="img-fluid">
+                <img src="https://noithatgialinh.vn/wp-content/uploads/2021/12/n1.jpg" width="1000" height="500" alt="Phòng Đơn" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h2>Phòng Đơn</h2>
+                <p>Phòng đơn rộng rãi và thoải mái, có tất cả các tiện nghi cần thiết để bạn tận hưởng kỳ nghỉ của mình.</p>
+                <ul>
+                  <li>Diện tích: 20m²</li>
+                  <li>Giường đơn</li>
+                  <li>Tủ lạnh</li>
+                  <li>TV truyền hình cáp</li>
+                  <li>Máy điều hòa</li>
+                  <li>Bàn làm việc</li>
+                  <li>Phòng tắm riêng</li>
+                </ul>
+                <p>Giá: 500.000 VND/đêm</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+              <a href="#!/datPhong" type="button" class="btn btn-primary" id="bookRoomBtn">Đặt Phòng</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="clickDoubleRoom">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Chi Tiết Phòng Đôi
+            </h5>
+            <button type="button" class="btn-close btn-outline-primary" data-bs-dismiss="modal" aria-label="Close">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="https://tubepfurniture.com/wp-content/uploads/2020/09/phong-mau-khach-san-go-cong-nghiep-01.jpg" width="1000" height="500" alt="Phòng Đôi" class="img-fluid">
+                <img src="https://dyf.vn/wp-content/uploads/2021/01/thiet-ke-phong-ngu-khach-san-mini-2-giuong-don.jpg" width="1000" height="500" alt="Phòng Đôi" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h2>Phòng Đôi</h2>
+                <p>Phòng đôi rộng rãi và thoải mái, có tất cả các tiện nghi cần thiết để bạn tận hưởng kỳ nghỉ của mình.</p>
+                <ul>
+                  <li>Diện tích: 30m²</li>
+                  <li>Giường đôi</li>
+                  <li>Tủ lạnh</li>
+                  <li>TV truyền hình cáp</li>
+                  <li>Máy điều hòa</li>
+                  <li>Bàn làm việc</li>
+                  <li>Phòng tắm riêng</li>
+                </ul>
+                <p>Giá: 800.000 VND/đêm</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="#!/datPhong" type="button" class="btn btn-primary" id="bookRoomBtn">Đặt Phòng</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="clickLuxury">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Chi Tiết Phòng Cao Cấp
+            </h5>
+            <button type="button" class="btn-close btn-outline-primary" data-bs-dismiss="modal" aria-label="Close">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="https://housedesign.vn/wp-content/uploads/2020/03/phong-khach-san-dep-1.jpg" width="1000" height="500" alt="Phòng Cao Cấp" class="img-fluid">
+                <img src="https://wedo.vn/wp-content/uploads/2022/09/phong-ngu-phong-cach-hoang-gia-2.jpg" width="1000" height="500" alt="Phòng Cao Cấp" class="img-fluid">
+                <img src="https://kientrucroman.com.vn/wp-content/uploads/phong-ngu-hoang-gia-dep-1.jpg" width="1000" height="500" alt="Phòng Cao Cấp" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h2>Phòng Cao Cấp</h2>
+                <p>Phòng cao cấp rộng rãi và sang trọng, với các tiện nghi cao cấp để bạn có những trải nghiệm tuyệt vời.</p>
+                <ul>
+                  <li>Diện tích: 40m²</li>
+                  <li>Giường đôi size king</li>
+                  <li>Tủ lạnh lớn</li>
+                  <li>TV màn hình lớn 4K</li>
+                  <li>Máy điều hòa cao cấp</li>
+                  <li>Bàn làm việc rộng</li>
+                  <li>Phòng tắm rộng rãi với bồn jacuzzi</li>
+                  <li>Ban công với view đẹp</li>
+                </ul>
+                <p>Giá: 2.500.000 VND/đêm</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="#!/datPhong" type="button" class="btn btn-primary" id="bookRoomBtn">Đặt Phòng</a>
+          </div>
+        </div>
+      </div>
+    </div>

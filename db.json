@@ -1,0 +1,48 @@
+{
+  "listKH": [
+    {
+      "email": "tah52289@gmail.com",
+      "sdt": "0585555555",
+      "name": "Tạ Thị Hoa",
+      "dateCheckIn": "2024-06-07T17:00:00.000Z",
+      "dateCheckOut": "2024-05-31T17:00:00.000Z",
+      "cccd": "102910381311",
+      "loaiPhong": "Phòng cao cấp",
+      "soluongkhach": 2,
+      "id": "488d"
+    },
+    {
+      "id": "ccbd",
+      "email": "duyltph32068@fpt.edu.vn",
+      "sdt": "0961886385",
+      "name": "Lý Tiến Duy",
+      "dateCheckIn": "2024-05-31T17:00:00.000Z",
+      "dateCheckOut": "2024-06-06T17:00:00.000Z",
+      "cccd": "001204026779",
+      "loaiPhong": "Phòng đôi",
+      "soluongkhach": 2
+    },
+    {
+      "id": "7407",
+      "email": "khoi@gmail.com",
+      "sdt": "0359898465",
+      "name": "Lý Tiến Khôi",
+      "dateCheckIn": "2024-06-01T17:00:00.000Z",
+      "dateCheckOut": "2024-06-14T17:00:00.000Z",
+      "cccd": "120120120101",
+      "loaiPhong": "Phòng đơn",
+      "soluongkhach": 1
+    },
+    {
+      "id": "c499",
+      "email": "a@gmail.com",
+      "sdt": "0727511111",
+      "name": "Nguyễn Văn A",
+      "dateCheckIn": "2024-05-27T17:00:00.000Z",
+      "dateCheckOut": "2024-05-29T17:00:00.000Z",
+      "cccd": "16261213212123",
+      "loaiPhong": "Phòng đơn",
+      "soluongkhach": 1
+    }
+  ]
+}
